@@ -45,7 +45,7 @@ The model was evaluated on a 20% validation set held out from the original train
 
 | Class      | Precision | Recall | F1-Score |
 |------------|-----------|--------|----------|
-| Poor (0)   | **0.79 ** | **0.80** | **0.79** |
+| Poor (0)   | **0.79** | **0.80** | **0.79** |
 | Standard(1)| **0.81** | **0.81**| **0.81**|
 | Good (2)   | **0.72** | **0.71** | **0.72** |
 
