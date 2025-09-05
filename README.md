@@ -173,18 +173,13 @@ flowchart TD
 
 <div align="center">
 
-| 🛠️ **Technical Feature** | 📓 **Notebook** | 🐍 **Script** | 🏆 **Winner** |
-|:-------------------------:|:---------------:|:-------------:|:-------------:|
-| **📚 Code Documentation** | Extensive markdown | Code comments only | 📓 **Notebook** |
-| **🎨 Data Visualization** | Matplotlib/Seaborn plots | Text output only | 📓 **Notebook** |
-| **⚙️ Hyperparameter Grids** | Comprehensive ranges | Conservative ranges | 📓 **Notebook** |
-| **🌍 Environment Detection** | Kaggle + Local smart detection | Local files only | 📓 **Notebook** |
-| **⚡ Execution Speed** | Interactive (cell-by-cell) | Single fast execution | 🐍 **Script** |
-| **🤖 Automation Capability** | Manual cell execution | Full automation ready | 🐍 **Script** |
-| **🔍 Error Handling** | Cell-level debugging | Try-catch blocks | 🤝 **Tie** |
-| **📊 Model Evaluation** | Detailed visualizations | Text-based reports | 📓 **Notebook** |
-| **💾 Memory Usage** | Higher (Jupyter overhead) | Lower (pure Python) | 🐍 **Script** |
-| **🔄 Reproducibility** | Cell execution order matters | Linear execution | 🐍 **Script** |
+| Technical Feature          | Notebook                     | Script                     | Winner      |
+|----------------------------|------------------------------|----------------------------|-------------|
+| Code Documentation         | Extensive markdown           | Code comments only         | Notebook    |
+| Data Visualization         | Matplotlib/Seaborn plots     | Text output only           | Notebook    |
+| Execution Speed            | Interactive (cell-by-cell)   | Single fast execution      | Script      |
+| Error Handling             | Cell-level debugging         | Try-catch blocks           | Tie         |
+| Reproducibility            | Cell execution order matters | Linear execution           | Script      |
 
 </div>
 
