@@ -1,6 +1,6 @@
 
 # Credit Score Classification - Multi-Model Comparison
-# Author: [Your Name]
+# Author: Mayank Singh
 # Description: Classification pipeline with multiple models for credit score prediction using Kaggle data
 
 import pandas as pd
