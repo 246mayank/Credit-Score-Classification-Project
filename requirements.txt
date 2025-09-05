@@ -1,8 +1,25 @@
-pandas>=1.3.0
-numpy>=1.21.0
-scikit-learn>=1.0.0
-xgboost>=1.5.0
-lightgbm>=3.3.0
-seaborn>=0.11.0
-matplotlib>=3.4.0
-kaggle>=1.5.12
+# Credit Score Classification - Required Dependencies
+# Install all packages: pip install -r requirements.txt
+
+# Core Data Science Libraries
+pandas>=1.3.0              # Data manipulation and analysis
+numpy>=1.21.0               # Numerical computing
+matplotlib>=3.4.0           # Basic plotting
+seaborn>=0.11.0             # Statistical data visualization
+
+# Machine Learning Libraries
+scikit-learn>=1.0.0         # Core ML algorithms and preprocessing
+xgboost>=1.5.0              # Gradient boosting framework
+lightgbm>=3.3.0             # Microsoft's gradient boosting
+
+# Data Source Integration
+kaggle>=1.5.12              # Kaggle API for dataset download
+
+# Optional: Jupyter Notebook Support (uncomment if needed)
+# jupyter>=1.0.0            # Jupyter notebook server
+# ipykernel>=6.0.0          # Python kernel for Jupyter
+
+# Development Tools (uncomment for development)
+# pytest>=6.0.0            # Testing framework
+# black>=22.0.0             # Code formatter
+# flake8>=4.0.0             # Code linting
