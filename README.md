@@ -1,7 +1,18 @@
-
 # Credit Score Classification Project
 
-A comprehensive machine learning project for credit score classification using a multi-model approach.
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge&logo=scikit-learn)
+![XGBoost](https://img.shields.io/badge/XGBoost-Gradient%20Boosting-red?style=for-the-badge)
+![LightGBM](https://img.shields.io/badge/LightGBM-Fast%20Boosting-green?style=for-the-badge)
+![Kaggle](https://img.shields.io/badge/Kaggle-API%20Integrated-20BEFF?style=for-the-badge&logo=kaggle)
+
+**🚀 A comprehensive machine learning project delivering robust credit score classification with state-of-the-art models**
+
+[🔍 **Explore the Code**](./credit_score_classification.ipynb) • [📊 **View Dataset**](https://www.kaggle.com/datasets/mavimayank/train-and-test-creditscore) • [📈 **See Results**](#-model-performance)
+
+</div>
 
 ---
 
