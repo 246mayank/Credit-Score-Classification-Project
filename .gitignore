@@ -111,10 +111,11 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Data files (optional - uncomment if you don't want to upload data)
-# *.csv
-# *.json
-# *.xlsx
+# Data files - automatically downloaded datasets
+*.csv
+train.csv
+test.csv
+submission*.csv
 
 # Model files
 *.pkl
