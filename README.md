@@ -1,163 +1,94 @@
 
-# 🎯 Credit Score Classification - Advanced Multi-Model Machine Learning Pipeline
+# Credit Score Classification Project
 
-<div align="center">
-
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge&logo=scikit-learn)
-![XGBoost](https://img.shields.io/badge/XGBoost-Gradient%20Boosting-red?style=for-the-badge)
-![LightGBM](https://img.shields.io/badge/LightGBM-Fast%20Boosting-green?style=for-the-badge)
-![Kaggle](https://img.shields.io/badge/Kaggle-API%20Integrated-20BEFF?style=for-the-badge&logo=kaggle)
-
-**🚀 A comprehensive machine learning project delivering robust credit score classification with state-of-the-art models**
-
-[🔍 **Explore the Code**](./credit_score_classification.ipynb) • [📊 **View Dataset**](https://www.kaggle.com/datasets/mavimayank/train-and-test-creditscore) • [📈 **See Results**](#-model-performance)
-
-</div>
+A comprehensive machine learning project for credit score classification using a multi-model approach.
 
 ---
 
-## 🌟 Project Highlights
+## 🌟 Project Overview
 
-This comprehensive machine learning project delivers a robust classification system for predicting credit scores using authentic financial data sourced through **Kaggle's API**. The system intelligently categorizes customers into three distinct credit risk levels: **Poor**, **Standard**, and **Good**, providing critical insights for financial decision-making and risk assessment.
+This project delivers a robust system for predicting credit scores by classifying customers into **Poor**, **Standard**, and **Good** risk levels. It uses a multi-model approach, including Random Forest, XGBoost, and LightGBM, and features a fully automated data pipeline that integrates with the Kaggle API.
 
-### 🎯 **Advanced Technical Implementation**
-The project showcases a sophisticated **multi-model approach**, implementing three state-of-the-art machine learning algorithms: **Random Forest** for baseline ensemble learning, **XGBoost** for gradient boosting excellence, and **LightGBM** for high-performance gradient boosting. Each model undergoes comprehensive **hyperparameter optimization** using GridSearchCV, ensuring peak performance through systematic parameter exploration.
+The project is available in two formats:
+-   **Jupyter Notebook**: For learning, exploration, and detailed analysis.
+-   **Python Script**: For production, automation, and fast execution.
 
-### 🛠️ **Robust Data Engineering**
-The preprocessing pipeline demonstrates professional-grade data handling capabilities. It intelligently processes missing values, validates and corrects invalid entries, performs advanced categorical encoding including **multi-hot encoding** for complex loan type combinations, and implements feature scaling for optimal model convergence.
-
-### 🔬 **Scientific Evaluation Framework**
-The project implements a rigorous **self-evaluation methodology** using stratified train-validation splits to ensure unbiased model comparison. Each algorithm is assessed through detailed classification reports, accuracy metrics, precision-recall analysis, and cross-validation techniques.
-
-### 🏗️ **Production-Ready Architecture**
-Built with industry best practices, the codebase features modular Python functions, comprehensive error handling, detailed logging, and clean separation of concerns. The automated model selection process identifies the best-performing algorithm based on validation metrics, typically achieving **75-77% accuracy**.
+For a detailed technical breakdown, see the [**Project Report**](./project_report.txt).
 
 ---
-
-## 📋 Project Overview
-
-<div align="center">
-
-| Credit Score | Risk Level | Description |
-|:------------:|:----------:|:-----------:|
-| 🔴 **Poor (0)** | High Risk | Low creditworthiness |
-| 🟡 **Standard (1)** | Medium Risk | Average creditworthiness |
-| 🟢 **Good (2)** | Low Risk | High creditworthiness |
-
-</div>
 
 ## ✨ Features
 
-<div align="center">
-
-| 🔥 **Core Features** | 🚀 **Advanced Capabilities** |
-|:-------------------:|:----------------------------:|
-| 🤖 **Multi-Model Training** | 🔄 **Automated Data Download** |
-| 📊 **Hyperparameter Tuning** | 🧪 **Self-Evaluation Framework** |
-| 🛠️ **Comprehensive Preprocessing** | 📈 **Performance Visualization** |
-| 🎯 **Automated Model Selection** | 🔧 **Production-Ready Code** |
-
-</div>
-
-### 🤖 **Machine Learning Models**
-- **🌲 Random Forest**: Robust ensemble baseline with feature importance analysis
-- **🚀 XGBoost**: Advanced gradient boosting with optimized hyperparameters
-- **💡 LightGBM**: High-performance gradient boosting for fast training
-
-### 🔧 **Technical Features**
-- **📡 Kaggle API Integration**: Automatic dataset download and management
-- **🧹 Advanced Data Cleaning**: Smart handling of missing values and outliers
-- **🏷️ Feature Engineering**: Multi-hot encoding for complex categorical data
-- **⚖️ Feature Scaling**: StandardScaler normalization for optimal performance
-- **📊 Comprehensive Evaluation**: Detailed metrics, confusion matrices, and reports
+-   **Multi-Model Training**: Compares Random Forest, XGBoost, and LightGBM.
+-   **Hyperparameter Tuning**: Uses GridSearchCV for optimal model performance.
+-   **Automated Data Pipeline**: Downloads and preprocesses data automatically.
+-   **Dual Implementation**: Notebook for analysis, script for production.
 
 ---
 
-## 🏗️ Project Structure
+## � Quick Start
 
-```
-📦 credit-score-classification/
-├── 📊 credit_score_classification.ipynb    # 🎯 Main Jupyter Notebook
-├── 🐍 Credit_Score_classsification.py      # 🚀 Python Script Version
-├── 📋 requirements.txt                      # 📦 Dependencies
-├── 📖 README.md                            # 📚 Documentation
-├── 🔍 .gitignore                           # 🚫 Git ignore rules
-├── 📊 train.csv                            # 📈 Training data (auto-downloaded)
-├── 📊 test.csv                             # 🧪 Test data (auto-downloaded)
-└── 📤 submission_*.csv                     # 🎯 Model predictions
-```
-
----
-
-## 🚀 Quick Start
-
-### 📋 **Prerequisites**
-
+### 1. Prerequisites
 ```bash
-# Python 3.8+ required
-python --version
-
-# Install required packages
+# Python 3.8+ is required
 pip install -r requirements.txt
 ```
 
-### 🔑 **Kaggle API Setup**
+### 2. Kaggle API Setup
+1.  Create a Kaggle account and download your `kaggle.json` API token.
+2.  Place it in `C:\Users\{username}\.kaggle\` (Windows) or `~/.kaggle/` (Mac/Linux).
 
-1. **Create Account**: Sign up at [Kaggle.com](https://www.kaggle.com)
-2. **Get API Token**: Go to Account → Create New API Token
-3. **Setup Credentials**: 
-   - **Windows**: `C:\Users\{username}\.kaggle\kaggle.json`
-   - **Linux/Mac**: `~/.kaggle/kaggle.json`
+### 3. Run the Project
 
-### 🎯 **Run the Project**
-
-#### 📓 **Option 1: Jupyter Notebook (Recommended)**
+#### **For Learning & Exploration (Recommended):**
 ```bash
 # Launch Jupyter and open the notebook
 jupyter notebook credit_score_classification.ipynb
 ```
 
-#### 🐍 **Option 2: Python Script**
+#### **For Automation & Production:**
 ```bash
-# Run the complete pipeline
+# Run the complete pipeline from your terminal
 python Credit_Score_classsification.py
 ```
 
 ---
 
-## 🔍 **Which Implementation Should You Choose?**
+## 📊 Model Performance
+
+Based on the latest run, the model accuracies are as follows. Random Forest was the top performer.
+
+| Model         | Test Accuracy |
+|---------------|---------------|
+| **Random Forest** | **~78.8%**    |
+| LightGBM      | ~78.4%        |
+| XGBoost       | ~75.9%        |
+
+---
+
+## 🏗️ Project Structure
+```
+/
+├── credit_score_classification.ipynb   # Main Jupyter Notebook
+├── Credit_Score_classsification.py     # Production Python Script
+├── project_report.txt                  # Detailed Project Report
+├── requirements.txt                    # Dependencies
+└── README.md                           # This file
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open an issue to discuss any changes.
+
+---
 
 <div align="center">
 
-### 📊 **Quick Comparison Guide**
+**⭐ Star this repository if you found it helpful!**
 
-| 🎯 **Aspect** | 📓 **Jupyter Notebook** | 🐍 **Python Script** |
-|:------------:|:------------------------:|:--------------------:|
-| **🎯 Best For** | Learning & Exploration | Production & Automation |
-| **📚 Documentation** | ✅ **Extensive** | ⚠️ Minimal |
-| **🧪 Interactivity** | ✅ **Cell-by-cell** | ❌ Run-all-at-once |
-| **📊 Visualizations** | ✅ **Rich plots & charts** | ❌ Text output only |
-| **🔍 Analysis** | ✅ **Step-by-step insights** | ⚠️ Final results only |
-| **🎓 Educational Value** | ✅ **High** | ⚠️ Medium |
-| **⚡ Performance** | ⚠️ Interactive (slower) | ✅ **Fast execution** |
-| **🤖 Automation** | ❌ Manual execution | ✅ **Fully automated** |
-| **📈 Hyperparameter Tuning** | ✅ **More comprehensive** | ⚠️ Conservative |
-| **🌍 Environment Detection** | ✅ **Smart (Kaggle + Local)** | ⚠️ Basic local only |
-
-</div>
-
-### 🎯 **Choose the Jupyter Notebook if you are:**
-
-<div align="center">
-
-| 👤 **User Type** | ✅ **Why Notebook?** |
-|:----------------:|:--------------------:|
-| 🎓 **Student/Learner** | Rich explanations, step-by-step learning, visualizations |
-| 🔬 **Data Scientist** | Exploratory analysis, hypothesis testing, iterative development |
-| 👨‍🏫 **Educator** | Teaching tool with clear documentation and visual aids |
-| 🎯 **Portfolio Builder** | Professional presentation with markdown explanations |
-| 🧪 **Researcher** | Detailed methodology, experiment tracking, result analysis |
+</div>| 🧪 **Researcher** | Detailed methodology, experiment tracking, result analysis |
 
 </div>
 
@@ -422,7 +353,7 @@ Have an idea? We'd love to hear it! Open an [issue](../../issues) describing:
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github)](https://github.com/246mayank)
 [![Kaggle](https://img.shields.io/badge/Kaggle-Profile-blue?style=for-the-badge&logo=kaggle)](https://www.kaggle.com/246mayank)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/your-profile)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/mayank-singh-789719255/)
 
 **⭐ Star this repository if you found it helpful!**
 
