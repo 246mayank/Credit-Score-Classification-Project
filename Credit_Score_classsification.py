@@ -13,12 +13,49 @@ from sklearn.metrics import classification_report, accuracy_score
 import xgboost as xgb
 import lightgbm as lgb
 import warnings
+import os
+import kaggle
 warnings.filterwarnings('ignore')
 
-def load_data(train_path, test_path):
-	train = pd.read_csv(train_path)
-	test = pd.read_csv(test_path)
-	return train, test
+def download_kaggle_data():
+    """
+    Download the credit score dataset from Kaggle using the API
+    """
+    print("Downloading data from Kaggle...")
+    
+    # Download the dataset
+    kaggle.api.dataset_download_files('mavimayank/train-and-test-creditscore', 
+                                     path='.', 
+                                     unzip=True)
+    
+    print("Data downloaded successfully!")
+    
+    # Verify files exist
+    if os.path.exists('train.csv') and os.path.exists('test.csv'):
+        print("✓ train.csv and test.csv found")
+        return True
+    else:
+        print("❌ Error: Data files not found after download")
+        return False
+
+def load_data():
+    """
+    Load training and test data, downloading from Kaggle if necessary
+    """
+    # Check if data files exist locally
+    if not (os.path.exists('train.csv') and os.path.exists('test.csv')):
+        print("Data files not found locally. Downloading from Kaggle...")
+        if not download_kaggle_data():
+            raise FileNotFoundError("Failed to download data from Kaggle")
+    
+    # Load the data
+    train = pd.read_csv('train.csv')
+    test = pd.read_csv('test.csv')
+    
+    print(f"Training data shape: {train.shape}")
+    print(f"Test data shape: {test.shape}")
+    
+    return train, test
 
 def drop_identifiers(df):
 	columns_to_drop = ['ID', 'Customer_ID', 'Name', 'SSN']
@@ -260,10 +297,6 @@ def create_submission_with_best_model(best_model, X_test, test_customer_ids, fil
     return submission_df
 
 def main():
-    # File paths
-    train_path = 'train.csv'
-    test_path = 'test.csv'
-    
     # Columns to clean/impute
     impute_cols = [
         'Age', 'Annual_Income', 'Monthly_Inhand_Salary', 'Num_of_Loan',
@@ -271,9 +304,13 @@ def main():
         'Outstanding_Debt', 'Amount_invested_monthly', 'Monthly_Balance'
     ]
 
+    print("=" * 60)
+    print("CREDIT SCORE CLASSIFICATION - MULTI-MODEL PIPELINE")
+    print("=" * 60)
+    
     print("Loading and preprocessing data...")
-    # Load data
-    train, test = load_data(train_path, test_path)
+    # Load data using Kaggle API
+    train, test = load_data()
 
     # Preprocess train data
     train, vectorizer, imputation_dict = preprocess(train, impute_cols, fit_vectorizer=True)
