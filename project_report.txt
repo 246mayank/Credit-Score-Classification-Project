@@ -99,21 +99,57 @@ This section explains the core functions and libraries used in the project.
     -   **Purpose**: The main function that orchestrates the entire preprocessing pipeline.
     -   **Working**: It takes a DataFrame and applies a series of cleaning and feature engineering functions in a specific order. It reuses the `vectorizer` and `imputation_dict` from the training data when processing the test data to ensure consistency.
 
--   **`train_and_evaluate_models(...)`**:
-    -   **Purpose**: Trains the three models, tunes their hyperparameters, and evaluates their performance.
-    -   **Working**: It iterates through a configuration dictionary (`models_config`). For each model, it runs a `GridSearchCV` to find the best parameters and then calculates performance metrics on the validation set.
+---
 
--   **`create_submission_with_best_model(...)`**:
-    -   **Purpose**: Generates the final `submission.csv` file.
-    -   **Working**: It uses the best-performing model (identified during evaluation) to make predictions on the preprocessed test data. It then maps the numerical predictions back to their string labels ('Poor', 'Standard', 'Good') and saves the result.
+## 5. Implementation Comparison: Notebook vs. Script
+
+The project is offered in two formats to suit different needs: a detailed Jupyter Notebook for learning and a streamlined Python script for production. This section provides a deep dive into their differences.
+
+### 5.1. Quick Comparison Guide
+
+| Aspect                  | Jupyter Notebook                | Python Script               |
+|:------------------------|:--------------------------------|:----------------------------|
+| **Best For**            | Learning & Exploration          | Production & Automation     |
+| **Documentation**       | Extensive (Markdown Cells)      | Minimal (Code Comments)     |
+| **Interactivity**       | Cell-by-cell execution          | Run-all-at-once             |
+| **Visualizations**      | Rich plots & charts             | Text output only            |
+| **Analysis**            | Step-by-step insights           | Final results only          |
+| **Educational Value**   | High                            | Medium                      |
+| **Performance**         | Slower (Interactive Overhead)   | Fast (Optimized Execution)  |
+| **Automation**          | Manual execution                | Fully automated             |
+| **Hyperparameter Tuning** | More comprehensive search       | More conservative search    |
+| **Environment Detection** | Smart (Kaggle + Local)          | Basic (Local only)          |
+
+### 5.2. Which Implementation Should You Choose?
+
+#### Choose the Jupyter Notebook if you are:
+-   **A Student or Learner**: The notebook provides rich explanations, step-by-step execution, and visualizations that are ideal for learning.
+-   **A Data Scientist**: Perfect for exploratory data analysis, hypothesis testing, and iterative model development.
+-   **An Educator**: Can be used as a teaching tool with clear documentation and visual aids.
+
+#### Choose the Python Script if you are:
+-   **An MLOps Engineer**: The script is designed for automation and can be easily integrated into a production pipeline.
+-   **Running Automated Jobs**: Ideal for scheduled runs or batch predictions where no manual intervention is needed.
+-   **Focused on Performance**: The script executes faster as it does not have the overhead of the Jupyter environment.
+
+### 5.3. Technical Differences Deep Dive
+
+#### Model Configuration Differences
+-   **Jupyter Notebook**: Employs a more exhaustive `GridSearchCV` for hyperparameter tuning. This is done to favor discovery and learning, allowing for a deeper exploration of the parameter space.
+-   **Python Script**: Uses a more conservative and faster set of hyperparameters for `GridSearchCV`. This prioritizes speed and efficiency, which is critical in a production environment.
+
+#### Code and Execution Differences
+-   **Environment Handling**: The notebook contains logic to intelligently detect whether it's running in a Kaggle environment or locally, adjusting file paths accordingly. The script assumes a standard local environment.
+-   **Output**: The notebook generates rich outputs, including tables, charts, and formatted text. The script produces clean, log-style text output suitable for command-line interfaces.
+-   **Structure**: The notebook is structured into cells with Markdown explanations, creating a narrative flow. The script is organized into functions for modularity and reusability, following standard software engineering practices.
 
 ---
 
-## 5. Performance & Output Analysis
+## 6. Performance & Output Analysis
 
 This section presents the typical output from running the project.
 
-### 5.1. Python Script Terminal Output
+### 6.1. Python Script Terminal Output
 
 The following is a sample output from running `python Credit_Score_classsification.py`:
 
@@ -186,7 +222,7 @@ Preview of submission:
 XGBoost was selected as the best model for final predictions!
 ```
 
-### 5.2. Jupyter Notebook Output
+### 6.2. Jupyter Notebook Output
 
 The Jupyter Notebook provides a more visual and interactive output.
 
@@ -211,7 +247,7 @@ For tree-based models, the notebook displays a list of the top 10 most important
 
 ---
 
-## 6. Conclusion
+## 7. Conclusion
 
 This project successfully demonstrates the creation of an end-to-end machine learning pipeline for credit score classification. It highlights best practices in data preprocessing, model training, evaluation, and implementation.
 
