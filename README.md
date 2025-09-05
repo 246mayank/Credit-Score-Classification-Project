@@ -77,92 +77,72 @@ Based on the latest run, the model accuracies are as follows. Random Forest was 
 
 ---
 
-## 🏗️ Project Structure
-```
-/
-├── credit_score_classification.ipynb   # Main Jupyter Notebook
-├── Credit_Score_classsification.py     # Production Python Script
-├── project_report.txt                  # Detailed Project Report
-├── requirements.txt                    # Dependencies
-└── README.md                           # This file
-```
 
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please open an issue to discuss any changes.
-
----
-
-<div align="center">
-
-**⭐ Star this repository if you found it helpful!**
-
-</div>| 🧪 **Researcher** | Detailed methodology, experiment tracking, result analysis |
 
 </div>
 
-**🌟 Key Advantages:**
-- **📚 Comprehensive Documentation**: Markdown cells explain every step
-- **🎨 Rich Visualizations**: Plots, charts, and data exploration graphics  
-- **🔍 Interactive Analysis**: Run cells individually, modify parameters easily
-- **🎓 Educational Design**: Perfect for understanding ML concepts
-- **⚙️ Advanced Hyperparameter Tuning**: More extensive parameter grids
-- **🌐 Smart Environment Detection**: Works seamlessly in Kaggle or local setup
+</div>
+
+**Key Advantages:**
+- Comprehensive Documentation: Markdown cells explain every step
+- Rich Visualizations: Plots, charts, and data exploration graphics  
+- Interactive Analysis: Run cells individually, modify parameters easily
+- Educational Design: Perfect for understanding ML concepts
+- Advanced Hyperparameter Tuning: More extensive parameter grids
+- Smart Environment Detection: Works seamlessly in Kaggle or local setup
 
 ### 🚀 **Choose the Python Script if you are:**
 
 <div align="center">
 
-| 👤 **User Type** | ✅ **Why Script?** |
+| User Type | Why Script? |
 |:----------------:|:------------------:|
-| 🏢 **Production Engineer** | Deployment, automation, CI/CD integration |
-| ⚡ **Performance-focused** | Fast execution, minimal overhead |
-| 🤖 **Automation Specialist** | Scheduled runs, batch processing |
-| 🎯 **Quick Results** | Just want predictions without exploration |
-| 🔧 **Integration Developer** | Embedding in larger systems |
+| Production Engineer | Deployment, automation, CI/CD integration |
+| Performance-focused | Fast execution, minimal overhead |
+| Automation Specialist | Scheduled runs, batch processing |
+| Quick Results | Just want predictions without exploration |
+| Integration Developer | Embedding in larger systems |
 
 </div>
 
-**⚡ Key Advantages:**
-- **🚀 Fast Execution**: Single command, complete pipeline
-- **🤖 Automation-Ready**: Perfect for scheduled jobs and batch processing
-- **📦 Lightweight**: Minimal dependencies, clean execution
-- **🔧 Production-Friendly**: Easy integration into larger systems
-- **⚙️ Streamlined**: No UI overhead, pure computation
+**Key Advantages:**
+- Fast Execution: Single command, complete pipeline
+- Automation-Ready: Perfect for scheduled jobs and batch processing
+- Lightweight: Minimal dependencies, clean execution
+- Production-Friendly: Easy integration into larger systems
+- Streamlined: No UI overhead, pure computation
 
 ### 💡 **Our Recommendation:**
 
 <div align="center">
 
-| 🎯 **Use Case** | 🏆 **Best Choice** | 📋 **Reason** |
+| Use Case | Best Choice | Reason |
 |:---------------:|:------------------:|:-------------:|
-| **📚 Learning ML** | 📓 **Jupyter Notebook** | Rich documentation & visualizations |
-| **🎯 Building Portfolio** | 📓 **Jupyter Notebook** | Professional presentation |
-| **🏢 Production Deployment** | 🐍 **Python Script** | Automation & performance |
-| **🔬 Research & Analysis** | 📓 **Jupyter Notebook** | Interactive exploration |
-| **⚡ Quick Predictions** | 🐍 **Python Script** | Fast execution |
+| Learning ML | Jupyter Notebook | Rich documentation & visualizations |
+| Building Portfolio | Jupyter Notebook | Professional presentation |
+| Production Deployment | Python Script | Automation & performance |
+| Research & Analysis | Jupyter Notebook | Interactive exploration |
+| Quick Predictions | Python Script | Fast execution |
 
 </div>
 
-> **💡 Pro Tip**: Start with the **Jupyter Notebook** to understand the methodology, then use the **Python Script** for production deployment!
+> **Pro Tip**: Start with the **Jupyter Notebook** to understand the methodology, then use the **Python Script** for production deployment!
 
 ### 🎯 **Quick Decision Flowchart**
 
 ```mermaid
 flowchart TD
-    A[🤔 What's your goal?] --> B{🎓 Learning/Teaching?}
-    A --> C{🏢 Production Use?}
-    A --> D{🔬 Research/Analysis?}
+    A[What's your goal?] --> B{Learning/Teaching?}
+    A --> C{Production Use?}
+    A --> D{Research/Analysis?}
     
-    B -->|Yes| E[📓 Use Jupyter Notebook]
-    C -->|Yes| F[🐍 Use Python Script]
-    D -->|Yes| G[📓 Use Jupyter Notebook]
+    B -->|Yes| E[Use Jupyter Notebook]
+    C -->|Yes| F[Use Python Script]
+    D -->|Yes| G[Use Jupyter Notebook]
     
-    E --> H[✅ Rich documentation<br/>📊 Visualizations<br/>🎓 Educational value]
-    F --> I[✅ Fast execution<br/>🤖 Automation ready<br/>📦 Production deployment]
-    G --> J[✅ Interactive exploration<br/>🔍 Detailed analysis<br/>📈 Custom experiments]
+    E --> H[Rich documentation<br/>Visualizations<br/>Educational value]
+    F --> I[Fast execution<br/>Automation ready<br/>Production deployment]
+    G --> J[Interactive exploration<br/>Detailed analysis<br/>Custom experiments]
 ```
 
 ---
@@ -212,48 +192,48 @@ flowchart TD
 
 <div align="center">
 
-| ⚡ **Performance Metric** | 📓 **Notebook** | 🐍 **Script** |
+| Performance Metric | Notebook | Script |
 |:-------------------------:|:---------------:|:-------------:|
-| **🚀 Startup Time** | ~3-5 seconds | ~1-2 seconds |
-| **💾 Memory Usage** | ~200-400 MB | ~100-200 MB |
-| **⏱️ Training Time** | Longer (extensive grids) | Faster (focused grids) |
-| **📊 Output Detail** | Rich (plots + tables) | Concise (text only) |
+| Startup Time | ~3-5 seconds | ~1-2 seconds |
+| Memory Usage | ~200-400 MB | ~100-200 MB |
+| Training Time | Longer (extensive grids) | Faster (focused grids) |
+| Output Detail | Rich (plots + tables) | Concise (text only) |
 
 </div>
 
 ---
 
-## �📊 Model Performance
+## 📊 Model Performance
 
 <div align="center">
 
-### 🏆 **Typical Results**
+### **Typical Results**
 
 | Model | Accuracy | Precision | Recall | F1-Score |
 |:-----:|:--------:|:---------:|:------:|:--------:|
-| 🌲 **Random Forest** | 75.2% | 0.752 | 0.751 | 0.751 |
-| 🚀 **XGBoost** | **76.8%** | **0.769** | **0.768** | **0.768** |
-| 💡 **LightGBM** | 76.7% | 0.767 | 0.766 | 0.766 |
+| Random Forest | 75.2% | 0.752 | 0.751 | 0.751 |
+| XGBoost | **76.8%** | **0.769** | **0.768** | **0.768** |
+| LightGBM | 76.7% | 0.767 | 0.766 | 0.766 |
 
-*📈 XGBoost typically emerges as the best performer*
+*XGBoost typically emerges as the best performer*
 
 </div>
 
 ### 🎯 **Expected Output**
 ```
-🤖 MULTI-MODEL TRAINING & EVALUATION
+MULTI-MODEL TRAINING & EVALUATION
 ============================================================
-🌲 1. Training Random Forest...
-   ✅ Random Forest Accuracy: 0.7520
+1. Training Random Forest...
+   Random Forest Accuracy: 0.7520
 
-🚀 2. Training XGBoost with hyperparameter tuning...
-   ✅ XGBoost Accuracy: 0.7680
-   🔧 Best Parameters: {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 200}
+2. Training XGBoost with hyperparameter tuning...
+   XGBoost Accuracy: 0.7680
+   Best Parameters: {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 200}
 
-💡 3. Training LightGBM with hyperparameter tuning...
-   ✅ LightGBM Accuracy: 0.7678
+3. Training LightGBM with hyperparameter tuning...
+   LightGBM Accuracy: 0.7678
 
-🏆 BEST MODEL: XGBoost with accuracy: 0.7680
+BEST MODEL: XGBoost with accuracy: 0.7680
 ```
 
 ---
@@ -264,27 +244,27 @@ flowchart TD
 
 ```mermaid
 graph LR
-    A[📡 Kaggle API] --> B[📊 Raw Data]
-    B --> C[🧹 Data Cleaning]
-    C --> D[🔢 Feature Engineering]
-    D --> E[⚖️ Scaling]
-    E --> F[🤖 Model Training]
-    F --> G[📊 Evaluation]
-    G --> H[🎯 Predictions]
+    A[Kaggle API] --> B[Raw Data]
+    B --> C[Data Cleaning]
+    C --> D[Feature Engineering]
+    D --> E[Scaling]
+    E --> F[Model Training]
+    F --> G[Evaluation]
+    G --> H[Predictions]
 ```
 
 </div>
 
 ### 🛠️ **Preprocessing Steps**
 
-1. **🗑️ Identifier Removal**: Drop non-predictive columns (ID, Name, SSN)
-2. **🔢 Numeric Cleaning**: Convert text-based numbers to proper format
-3. **⚠️ Data Validation**: Correct invalid entries (age outliers, etc.)
-4. **🩹 Missing Value Imputation**: Smart median-based filling
-5. **📅 Feature Conversion**: Transform credit history to numerical months
-6. **💳 Loan Type Encoding**: Multi-hot encoding for multiple loan types
-7. **🏷️ Categorical Encoding**: One-hot encoding for remaining features
-8. **⚖️ Feature Scaling**: StandardScaler normalization
+1. **Identifier Removal**: Drop non-predictive columns (ID, Name, SSN)
+2. **Numeric Cleaning**: Convert text-based numbers to proper format
+3. **Data Validation**: Correct invalid entries (age outliers, etc.)
+4. **Missing Value Imputation**: Smart median-based filling
+5. **Feature Conversion**: Transform credit history to numerical months
+6. **Loan Type Encoding**: Multi-hot encoding for multiple loan types
+7. **Categorical Encoding**: One-hot encoding for remaining features
+8. **Feature Scaling**: StandardScaler normalization
 
 ---
 
@@ -292,13 +272,13 @@ graph LR
 
 <div align="center">
 
-| 🏢 **Industry** | 📋 **Application** | 💼 **Value** |
+| Industry | Application | Value |
 |:---------------:|:------------------:|:------------:|
-| 🏦 **Banking** | Credit Risk Assessment | Automated loan decisions |
-| 📊 **Fintech** | Customer Scoring | Real-time risk evaluation |
-| 🎓 **Education** | ML Learning Resource | Hands-on experience |
-| 💼 **Portfolio** | Skill Demonstration | Professional showcase |
-| 🔬 **Research** | Baseline Model | Academic studies |
+| Banking | Credit Risk Assessment | Automated loan decisions |
+| Fintech | Customer Scoring | Real-time risk evaluation |
+| Education | ML Learning Resource | Hands-on experience |
+| Portfolio | Skill Demonstration | Professional showcase |
+| Research | Baseline Model | Academic studies |
 
 </div>
 
@@ -306,46 +286,44 @@ graph LR
 
 ## 🛠️ Technical Implementation
 
-### 🔬 **Model Evaluation Methodology**
-- **📊 Stratified Splits**: Maintaining class distribution in train/validation
-- **🔄 Cross-Validation**: 3-fold CV during hyperparameter tuning
-- **📈 Multiple Metrics**: Accuracy, Precision, Recall, F1-Score
-- **🎯 Confusion Matrices**: Detailed class-wise performance analysis
-- **🏆 Automated Selection**: Best model chosen by validation accuracy
+### **Model Evaluation Methodology**
+- Stratified Splits: Maintaining class distribution in train/validation
+- Cross-Validation: 3-fold CV during hyperparameter tuning
+- Multiple Metrics: Accuracy, Precision, Recall, F1-Score
+- Confusion Matrices: Detailed class-wise performance analysis
+- Automated Selection: Best model chosen by validation accuracy
 
-### 🔧 **Hyperparameter Optimization**
-- **Random Forest**: n_estimators, max_depth, min_samples_split
-- **XGBoost**: learning_rate, max_depth, n_estimators
-- **LightGBM**: learning_rate, num_leaves, n_estimators
+### **Hyperparameter Optimization**
+- Random Forest: n_estimators, max_depth, min_samples_split
+- XGBoost: learning_rate, max_depth, n_estimators
+- LightGBM: learning_rate, num_leaves, n_estimators
 
 ---
 
 ## 📚 Documentation & Resources
 
-### 📖 **Project Documentation**
-- [📊 **Dataset Information**](https://www.kaggle.com/datasets/mavimayank/train-and-test-creditscore)
-- [🤖 **Model Comparison Guide**](./docs/model_comparison.md)
-- [🔧 **Technical Architecture**](./docs/architecture.md)
+### **Project Documentation**
+- [**Dataset Information**](https://www.kaggle.com/datasets/mavimayank/train-and-test-creditscore)
+- [**Model Comparison Guide**](./docs/model_comparison.md)
+- [**Technical Architecture**](./docs/architecture.md)
 
-### 🎓 **Learning Resources**
-- [📚 **Machine Learning Best Practices**](https://scikit-learn.org/stable/tutorial/index.html)
-- [🚀 **XGBoost Documentation**](https://xgboost.readthedocs.io/)
-- [💡 **LightGBM Guide**](https://lightgbm.readthedocs.io/)
+### **Learning Resources**
+- [**Machine Learning Best Practices**](https://scikit-learn.org/stable/tutorial/index.html)
+- [**XGBoost Documentation**](https://xgboost.readthedocs.io/)
+- [**LightGBM Guide**](https://lightgbm.readthedocs.io/)
 
 ---
 
-## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
-### 🐛 **Bug Reports**
+### **Bug Reports**
 Found a bug? Please open an [issue](../../issues) with:
 - Clear description of the problem
 - Steps to reproduce
 - Expected vs actual behavior
 - Environment details
 
-### ✨ **Feature Requests**
+### **Feature Requests**
 Have an idea? We'd love to hear it! Open an [issue](../../issues) describing:
 - The feature you'd like to see
 - Why it would be useful
