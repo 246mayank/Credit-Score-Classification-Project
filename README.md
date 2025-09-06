@@ -83,7 +83,7 @@ Based on the latest run, the model accuracies are as follows. Random Forest was 
 
 </div>
 
-**Key Advantages:**
+**Key Advantages of Jupyter notebook:**
 - Comprehensive Documentation: Markdown cells explain every step
 - Rich Visualizations: Plots, charts, and data exploration graphics  
 - Interactive Analysis: Run cells individually, modify parameters easily
@@ -91,21 +91,8 @@ Based on the latest run, the model accuracies are as follows. Random Forest was 
 - Advanced Hyperparameter Tuning: More extensive parameter grids
 - Smart Environment Detection: Works seamlessly in Kaggle or local setup
 
-### 🚀 **Choose the Python Script if you are:**
 
-<div align="center">
-
-| User Type | Why Script? |
-|:----------------:|:------------------:|
-| Production Engineer | Deployment, automation, CI/CD integration |
-| Performance-focused | Fast execution, minimal overhead |
-| Automation Specialist | Scheduled runs, batch processing |
-| Quick Results | Just want predictions without exploration |
-| Integration Developer | Embedding in larger systems |
-
-</div>
-
-**Key Advantages:**
+**Key Advantages of python script:**
 - Fast Execution: Single command, complete pipeline
 - Automation-Ready: Perfect for scheduled jobs and batch processing
 - Lightweight: Minimal dependencies, clean execution
@@ -128,117 +115,8 @@ Based on the latest run, the model accuracies are as follows. Random Forest was 
 
 > **Pro Tip**: Start with the **Jupyter Notebook** to understand the methodology, then use the **Python Script** for production deployment!
 
-### 🎯 **Quick Decision Flowchart**
-
-```mermaid
-flowchart TD
-    A[What's your goal?] --> B{Learning/Teaching?}
-    A --> C{Production Use?}
-    A --> D{Research/Analysis?}
-    
-    B -->|Yes| E[Use Jupyter Notebook]
-    C -->|Yes| F[Use Python Script]
-    D -->|Yes| G[Use Jupyter Notebook]
-    
-    E --> H[Rich documentation<br/>Visualizations<br/>Educational value]
-    F --> I[Fast execution<br/>Automation ready<br/>Production deployment]
-    G --> J[Interactive exploration<br/>Detailed analysis<br/>Custom experiments]
-```
-
 ---
-
-## � **Technical Differences Deep Dive**
-
-### 📊 **Feature Comparison Matrix**
-
-<div align="center">
-
-| Technical Feature          | Notebook                     | Script                     | Winner      |
-|----------------------------|------------------------------|----------------------------|-------------|
-| Code Documentation         | Extensive markdown           | Code comments only         | Notebook    |
-| Data Visualization         | Matplotlib/Seaborn plots     | Text output only           | Notebook    |
-| Execution Speed            | Interactive (cell-by-cell)   | Single fast execution      | Script      |
-| Error Handling             | Cell-level debugging         | Try-catch blocks           | Tie         |
-| Reproducibility            | Cell execution order matters | Linear execution           | Script      |
-
-</div>
-
-### 🎯 **Model Configuration Differences**
-
-#### 📓 **Jupyter Notebook - More Extensive**
-```python
-# More comprehensive hyperparameter grids
-'Random Forest': {
-    'n_estimators': [100, 200],           # 2 options
-    'max_depth': [10, 20, None],          # 3 options  
-    'min_samples_split': [2, 5],          # 2 options
-    'min_samples_leaf': [1, 2]            # 2 options
-}
-# Total combinations: 24 per model
-```
-
-#### 🐍 **Python Script - Performance Focused**
-```python
-# More conservative, faster hyperparameter grids
-'XGBoost': {
-    'max_depth': [3, 5, 7],               # 3 options
-    'n_estimators': [100, 200],           # 2 options
-    'learning_rate': [0.1, 0.05]          # 2 options
-}
-# Total combinations: 12 per model
-```
-
-### 📈 **Performance Characteristics**
-
-<div align="center">
-
-| Performance Metric | Notebook | Script |
-|:-------------------------:|:---------------:|:-------------:|
-| Startup Time | ~3-5 seconds | ~1-2 seconds |
-| Memory Usage | ~200-400 MB | ~100-200 MB |
-| Training Time | Longer (extensive grids) | Faster (focused grids) |
-| Output Detail | Rich (plots + tables) | Concise (text only) |
-
-</div>
-
----
-
-## 📊 Model Performance
-
-<div align="center">
-
-### **Typical Results**
-
-| Model | Accuracy | Precision | Recall | F1-Score |
-|:-----:|:--------:|:---------:|:------:|:--------:|
-| Random Forest | 75.2% | 0.752 | 0.751 | 0.751 |
-| XGBoost | **76.8%** | **0.769** | **0.768** | **0.768** |
-| LightGBM | 76.7% | 0.767 | 0.766 | 0.766 |
-
-*XGBoost typically emerges as the best performer*
-
-</div>
-
-### 🎯 **Expected Output**
-```
-MULTI-MODEL TRAINING & EVALUATION
-============================================================
-1. Training Random Forest...
-   Random Forest Accuracy: 0.7520
-
-2. Training XGBoost with hyperparameter tuning...
-   XGBoost Accuracy: 0.7680
-   Best Parameters: {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 200}
-
-3. Training LightGBM with hyperparameter tuning...
-   LightGBM Accuracy: 0.7678
-
-BEST MODEL: XGBoost with accuracy: 0.7680
-```
-
----
-
-## 🔄 Data Pipeline
+##  Data Pipeline
 
 <div align="center">
 
@@ -265,22 +143,6 @@ graph LR
 6. **Loan Type Encoding**: Multi-hot encoding for multiple loan types
 7. **Categorical Encoding**: One-hot encoding for remaining features
 8. **Feature Scaling**: StandardScaler normalization
-
----
-
-## 🎯 Use Cases & Applications
-
-<div align="center">
-
-| Industry | Application | Value |
-|:---------------:|:------------------:|:------------:|
-| Banking | Credit Risk Assessment | Automated loan decisions |
-| Fintech | Customer Scoring | Real-time risk evaluation |
-| Education | ML Learning Resource | Hands-on experience |
-| Portfolio | Skill Demonstration | Professional showcase |
-| Research | Baseline Model | Academic studies |
-
-</div>
 
 ---
 
